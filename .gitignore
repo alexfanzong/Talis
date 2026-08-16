@@ -1,0 +1,33 @@
+# OS and editors
+.DS_Store
+*.swp
+*~
+.vscode/
+
+# Local project and agent metadata
+.tuyaopen/
+.agents/
+.claude/
+AGENTS.md
+CLAUDE.md
+HANDOFF.md
+
+# Delivery artifacts and private assets
+*.tar.gz
+*.bin
+*.mp3
+*.m4a
+*.wav
+
+# Embedded build outputs
+source/embedded/.build/
+source/embedded/build/
+source/embedded/dist/
+*.o
+*.a
+*.elf
+*.map
+*.hex
+
+# Mini-app dependencies if a panel is added later
+node_modules/

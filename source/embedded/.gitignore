@@ -1,0 +1,18 @@
+# 构建产物 —— 绝对不能进仓库
+#
+# 注意：目录名是 .build（带点），不是 build。
+# 之前只写了 build/ 导致 .build/ 仍会被提交，里面的 CMakeCache.txt
+# 存的是生成它那台机器的绝对路径，Mac 和 Windows 互传必炸：
+#   "CMake Error: The current CMakeCache.txt directory ... is different than
+#    the directory ... where CMakeCache.txt was created."
+.build/
+build/
+dist/
+
+# 编译中间产物
+*.o
+*.a
+*.elf
+*.bin
+*.map
+*.hex
